@@ -605,6 +605,10 @@ a{
     background-color: #f9f9f9;
 }
 
+.footer .socials-link + .socials-link{
+    margin-left: 16px;
+}
+
 .footer .socials-link:hover{
     background-color: #ebebeb;
     border-radius: 3px;
