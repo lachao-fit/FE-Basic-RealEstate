@@ -50,59 +50,69 @@ a{
 }
 
 /********** HEADER **********/
-.header{
+.hero-wrap{
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: #e6f0ff;
     height: 100vh;
 }
 
-.header .navbar{
-    display: flex;
-    align-items: center;
-    padding-top: 38px;
+.fixed-header{
+    padding-top: 26px;
+    background-color: #e6f0ff;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 
-.header .navbar ul{
+.fixed-header .navbar{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.fixed-header .navbar ul{
     display: flex;
     margin-left: 50px;
 }
 
-.header .navbar ul a{
+.fixed-header .navbar ul a{
     font-size: 1.4rem;
     font-weight: 500;
     color: #4F5361;
     padding: 8px 14px;
 }
 
-.header .navbar ul a:hover{
+.fixed-header .navbar ul a:hover{
     text-decoration: underline;
 }
 
-.header .navbar .actions{
+.fixed-header .navbar .actions{
     margin-left: auto;
 }
 
-.header .navbar .action-link{
+.fixed-header .navbar .action-link{
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--primary-color);
 }
 
-.header .navbar .action-btn{
+.fixed-header .navbar .action-btn{
     padding: 13px 16px;
     margin-left: 18px;
     border-radius: 8px;
 }
 
-.header .hero{
+.hero-wrap .hero{
     margin-top: 130px;
 }
 
-.header .hero .info{
+.hero-wrap .hero .info{
     width: 51%;
 }
 
-.header .sub-tittle{
+.hero-wrap .sub-tittle{
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.5;
@@ -110,7 +120,7 @@ a{
     color: #687690;
 }
 
-.header .tittle{
+.hero-wrap .tittle{
     margin-top: 8px;
     font-size: 6.3rem;
     font-weight: 700;
@@ -118,7 +128,7 @@ a{
     color: #000336;
 }
 
-.header .desc{
+.hero-wrap .desc{
     margin-top: 30px;
     font-size: 1.8rem;
     font-weight: 400;
@@ -126,12 +136,12 @@ a{
     color: #5A6473;
 }
 
-.header .hero-cta{
+.hero-wrap .hero-cta{
     min-width: 170px;
     margin-top: 40px;
 }
 
-.header .hero-img{
+.hero-wrap .hero-img{
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
